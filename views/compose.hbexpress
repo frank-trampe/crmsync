@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Hubspot Outreach Bridge</title>
+	</head>
+	<body>
+		<form name="command" target="resultsFrame" method="POST" action="/api/operation">
+			{{#if webKey}}<input type="hidden" name="webKey" value="{{{webKey}}}"/>{{/if}}
+			<label><input type="checkbox" name="write" {{#if canWrite}}{{else}}disabled="1"{{/if}}/> Write</label><br/>
+			<label><input type="checkbox" name="recent" checked="1"/> Recent Records Only</label><br/>
+			<label><input type="radio" name="operation" value="import" checked="1"/> Import</label><br/>
+			<label><input type="radio" name="operation" value="campaign"/> Campaign</label><br/>
+			<button type="submit">Submit</button>
+		</form>
+		<iframe name="resultsFrame" style="width: 100%; height: 200px;">
+		</iframe>
+	</body>
+</html>
+
