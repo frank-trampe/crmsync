@@ -31,5 +31,5 @@ In order to perform an operation, give the token locations, add appropriate thro
 nodejs index.js --outreach-application /etc/hsorbridge/outreach-application.json --outreach-token /etc/hsorbridge/outreach-token.json --hubspot-token /etc/hsorbridge/hubspot-key.json --hubspot-queries-per-second 9 --outreach-queries-per-hour 4000 --write 1 --operation "campaign";
 ```
 
-If time has passed and you want to refresh your Outreach token (before it expires), you can capture the new tokens with the `--outreach-token-new 1` option.
+If time has passed and you want to refresh your Outreach token (before it expires), you can capture the new tokens with the `--outreach-token-new <NEW_TOKEN_FILE_NAME>` option.
 
